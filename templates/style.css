@@ -1,38 +1,75 @@
-/* Style the navbar */
+/* sets backgroud color and font throughout the pages */
+body { 
+    font-family: 'Trebuchet MS', sans-serif;
+    background-color: #dcdcdc
+} 
+
+/* styles the navigation bar */
 #navbar {
     overflow: hidden;
     background-color: #333;
-  }
+    text-align: center;
+}
   
-  /* Navbar links */
-  #navbar a {
-    float: left;
+/* navigation bar links */
+#navbar a {
     display: block;
     color: #f2f2f2;
     text-align: center;
+    display:inline-block;
     font-family: Arial;
     padding: 14px;
     text-decoration: none;
-  }
+
+}
+
+/* when you hover on the navigation links it turns maroon */
+#navbar a:hover{
+      background: maroon;
+}
   
-  /* Page content */
-  .content {
+/* page content */
+.content {
     padding: 16px;
-  }
+}
   
-  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
-  .sticky {
+/* the sticky class is added to the navbar with JS when it reaches its scroll position */  
+.sticky {
     position: fixed;
     top: 0;
     width: 100%;
-  }
+}
   
-  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-  .sticky + .content {
+/* add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
     padding-top: 60px;
-  }
+}
+
 
 h1 {
     text-align: center;
     font-family: Arial;
+}
+
+h2{
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+/* centers body and imgs to dynamic window sizes */
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    padding: 25px;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
 }
