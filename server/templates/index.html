@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Firebase & Flask</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="full-screen flex-center">
+  <h1 class="text-xl">Flask + Firebase</h1>  
+  <h3>{{ context.server_time }}</h3>
+</body>
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-analytics.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyBJY0sVuBzlIZHusmRaan0gIMLfqIbwxhk",
+    authDomain: "about-group-0.firebaseapp.com",
+
+    projectId: "about-group-0",
+    storageBucket: "about-group-0.appspot.com",
+    messagingSenderId: "388240349847",
+    appId: "1:388240349847:web:f7a800bfb1b35fe24f27d2",
+    measurementId: "G-B1DCMR1NE0"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</html>
